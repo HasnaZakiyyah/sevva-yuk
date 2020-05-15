@@ -49,6 +49,9 @@ Route::get('/v2/create/{id}', 'ProductController@create');
 
 Route::resource('/v3', 'StoreController');  
 Route::post('/v3/cari', 'StoreController@cari');
+
+Route::get('/v4/pilihpembayaran', 'TransactionController@pilihpembayaran');
+Route::post('/v4/save', 'TransactionController@save');
  
  
 
