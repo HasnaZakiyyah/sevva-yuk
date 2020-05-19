@@ -53,6 +53,7 @@ Route::post('/v3/cari', 'StoreController@cari');
 Route::get('/v4/pilihpembayaran', 'TransactionController@pilihpembayaran');
 Route::post('/v4/save', 'TransactionController@save');
  
+Route::get('/v4/statuspage', 'TransactionController@status');
  
 
 

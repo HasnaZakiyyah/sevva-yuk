@@ -13,6 +13,10 @@ class TransactionController extends Controller
         return view('v4/pilihpembayaran'); 
     }
 
+    public function status()
+    {
+        return view('v4/statuspage'); 
+    }
    
     public function save(Request $request)
     {

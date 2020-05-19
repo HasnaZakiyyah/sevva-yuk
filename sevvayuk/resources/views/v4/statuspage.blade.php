@@ -7,7 +7,7 @@
 </head>
 <body>
 <div class="container">
-<h2 align="center" > Status Pembayaran</h2><br />
+<h2 align="center" >Status Pembayaran</h2><br />
 <div class="row">
   <div class="col-sm-4"></div>
   <div class="col-sm-4">
@@ -20,32 +20,41 @@
 <td>Nomor Pembayaran</td>
         <td>:</td>
         <td><div class="row">
-  <div class="row-sm-4">{{ $ininama->merk}}</div>
-  <div class="row-sm-4">ini pake if sek lali carane</div></td>
+  <div class="row-sm-4"></div>
+  <div class="row-sm-4"></div></td>
         
 </tr>
 <tr>
     <td>Batas Waktu Pembayaran</td>
         <td>:</td>
-        <td>{{ number_format($bataswaktu->waktu)}</td>
+        <td></td>
 </tr>
 <tr>
-<td>Status Pembayaran </td>
-        <td > : </td>
-<td>
-ini pake if juga</td>
+    <td>Status Pembayaran</td>
+        <td>:</td>
+        <td></td>
 </tr>
-
 </table>
 </div>
   <div class="col-sm-4"></div>
+  <table align="center">
 </div>
+<tr>
+    <td> <div>
+<a href="{{action('TransactionController@pilihpembayaran') }}"
+class="btn btn-primary">Kembali</a>
+</div>
+</td>
+<td></td>
+<td>
+<div>
+<a href="{{action('TransactionController@pilihpembayaran') }}"
+class="btn btn-primary">Upload Bukti Pembayaran</a>
+</div>
+</td>
+</tr>
+</table>
 
-
-
-<div align="center">
-<a href="{{action('Upload Bukti@index') }}"
-class="btn btn-primary">Upload Bukti</a>
 </div>
 </div>
 </body>
